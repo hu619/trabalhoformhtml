@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários HTML</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <h1>Trabalho Formulários HTML</h1>
+  <p>Alunos:</p>
+  <ul>
+    <li>Huan</li>
+  </ul>
+
+  <h2 class="groove">Perguntas</h2>
+
+  <p><b>a.</b> Na tag &lt;input&gt; com atributo type="text", para que serve o atributo "placeholder"?</p>
+
+  <p><b>R.:</b> O atributo placeholder é uma pequena frase ou palavra, que tem o intuito de ajudar usuários
+    a entender como devem preencher determinado formulário, inserindo um texto contextual no campo
+    a ser respondido.
+  </p>
+
+  <p><b>b.</b> Na tag &lt;input&gt; com atributo type="radio" ou type="radio", para que serve o atributo "checked"?</p>
+
+  <p><b>R.:</b> O checked é um atributo booleano. Quando presente, ele especifica que um &lt;input&gt; elemento
+    deve ser pré-selecionada (marcada), quando a página é carregada. O atributo pode ser usado
+    com &lt;input type="checkbox"&gt; e &lt;input type="radio"&gt;. O atributo também pode ser definido após
+    o carregamento da página, com um JavaScript. </p>
+
+  <p><b>c.</b> Na tag &lt;input&gt; para que serve o atributo "value"?</p>
+
+  <p><b>R.:</b> Para elementos e &lt;button&gt;, o atributo especifica o valor inicial do elemento:
+    &lt;input&gt;&lt;option&gt; value.<br>
+    Para &lt;li&gt; elementos, o atributo define o valor do item de lista (para listas ordenadas).
+    Os próximos itens da lista serão incrementados a partir desse valor.<br>
+    Para &lt;meter&gt;, o atributo especifica o valor atual do medidor.<br>
+    Para &lt;progress&gt;, o atributo especifica quanto da tarefa foi concluída.<br>
+    Para &lt;param&gt;, o atributo especifica o valor do parâmetro.
+  </p>
+
+  <p><b>d.</b> Que atributo deve ser utilizado para agrupar vários botões de rádio em um formulário de modo
+    que apenas um deles fique marcado de cada vez?
+  </p>
+
+  <p><b>R.:</b> Nesse caso deve-se utilizar o atributo "name" para que apenas um deles fique marcado
+    por vez.
+  </p>
+
+  <p><b>e.</b> Para que serve a tag &lt;label&gt;? Para que serve o atributo "for" nessa tag?</p>
+
+  <p><b>R.:</b> A tag label é útil no trabalho com formulários. Ela especifica qual o "rótulo" do input
+    (a que se refere o input), e ajuda na experiência do usuário durante a utilização e preenchimento
+    do formulário.<br>
+    Usando o atributo "for" ao clicar no texto da label, automaticamente o foco é transferido para o input relacionado, ativando
+    para preenchimento o cursor no input. Isto é muito útil principalmente quando estamos usando input
+    radio ou checkbox, pois o usuário pode marcar o input apenas clicando na label, não sendo necessário
+    posicionar o ponteiro do mouse exatamente sobre o input para haver o preenchimento do formulário.
+  </p>
+
+  <p><b>f.</b> Na tag &lt;option&gt; para que serve o atributo "selected"?</p>
+
+  <p><b>R.:</b> O selectedatributo é um atributo booleano. Quando presente, especifica que uma opção deve
+    ser pré-selecionada quando a página for carregada. A opção pré-selecionada será exibida primeiro na
+    lista suspensa.
+  </p>
+
+  <p><b>g.</b> Nas tags de formulário para que serve o atributo "required"?</p>
+
+  <p><b>R.:</b> O atributo ( required ) informa ao navegador que o campo deve ser preenchido antes que o
+    formulário possa ser enviado.
+  </p>
+
+  <p><b>h.</b> Na tag &lt;form&gt; para que serve o atributo "action"?</p>
+
+  <p><b>R.:</b> O atributo action define o local (uma URL) em que os dados recolhidos do formulário devem
+    ser enviados
+  </p>
+
+  <p><b>i.</b> Na tag &lt;form&gt; para que serve o atributo "method"?</p>
+
+  <p><b>R.: </b> O atributo method define qual o método HTTP para enviar os dados (ele pode ser "GET"
+    ou "POST").
+  </p>
+
+  <p><b>j.</b> Para que o valor digitado de uma senha não apareça na barra de
+    endereços do navegador, qual deve ser o valor do atributo "method" na tag &lt;form&gt;?
+  </p>
+
+  <p><b>R.:</b> Deverá ser usado o método "POST".</p>
+
+  <p><b>k.</b> Qual valor deve ser informado no atributo "method" na tag &lt;form&gt; em um formulário que será usado
+    para fazer upload de arquivos?
+  </p>
+
+  <p><b>R.:</b> O valor seria type="file".</p>
+
+  <br><br>
+
+  <h2 class="groove">Formulário</h2>
+
+  <form method="post">
+    <fieldset>
+
+      <legend>Dados Pessoais</legend>
+
+      <label>Nome:</label>
+      <input type="text" name="nome" placeholder="Digite seu nome aqui">
+      <br><br>
+      <label>Data de Nascimento:</label>
+      <input type="date">
+      <br><br>
+      <label>Sexo:</label>
+      <input type="radio" name="sexo" value="masc">Masculino
+      <input type="radio" name="sexo" value="fem">Feminino
+      <input type="radio" name="sexo" value="pni">Prefiro não informar
+      <br><br>
+      <label>Endereço:</label>
+      <input type="text" name="endereço" placeholder="Digite seu endreço aqui">
+      <br><br>
+      <label>Logradouro:</label>
+      <input type="text" name="logradouro" placeholder="Digite seu logradouro aqui">
+      <br><br>
+      <label>Bairro:</label>
+      <input type="text" name="bairro" placeholder="Digite seu bairro aqui">
+      <br><br>
+      <label>Cidade:</label>
+      <input type="text" name="cidade" placeholder="Digite sua cidade aqui">
+      <br><br>
+      <label>UF:</label>
+      <select>
+        <option value="DF">DF</option>
+        <option value="RJ">RJ</option>
+        <option value="SP">SP</option>
+      </select>
+      <br><br>
+      <label>E-mail:</label>
+      <input type="email" name="email" placeholder="Email">
+      <br><br>
+
+      <input type="reset" name="reset" value="Limpar">
+      <input type="submit" name="submit" value="Enviar">
+
+    </fieldset>
+
+  </form>
+
+
+
+
+
+</body>
+
+</html>
